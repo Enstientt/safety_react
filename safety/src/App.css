@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Encode Sans Expanded";
+}
+#logos {
+  width: 12vw;
+  position: absolute;
+}
+@media screen and (max-width: 760px) {
+  #logos {
+    position: relative;
+    height: 100px;
+    width: 100px;
+  }
+  @keyframes rota {
+    25% {
+      transform: rotateY(90deg);
+    }
+    50% {
+      transform: rotateY(0deg);
+    }
+    75% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+  logos:hover {
+    animation-name: rota;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+}
+
+#logos:hover {
+  animation-name: rota;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes rota {
+  25% {
+    transform: rotateY(90deg);
+  }
+  50% {
+    transform: rotateY(0deg);
+  }
+  75% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
